@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    background-color: #000;
+    border: 4px solid #444;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+#stats {
+    margin-bottom: 20px;
+}
+
+#inventory {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    gap: 5px;
+}
+
+.inventory-item {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#dialogue {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 600px;
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
