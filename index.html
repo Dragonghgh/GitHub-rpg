@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub RPG Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui">
+            <div id="stats">
+                <span id="health">HP: 100/100</span>
+                <span id="level">Level: 1</span>
+            </div>
+            <div id="inventory"></div>
+            <div id="dialogue" class="hidden"></div>
+        </div>
+    </div>
+    <script src="js/player.js"></script>
+    <script src="js/npc.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/combat.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
